@@ -47,6 +47,12 @@ def format_answer(parsed, results, status):
             lines.append(line)
         return "\n".join(lines)
     if parsed.intent == "LAB_QUERY":
+        if parsed.year or parsed.term:
+            qualifiers = ", ".join(q for q in (parsed.year, parsed.term) if q)
+            return f"Laboratory / sessional records for {qualifiers} in the supplied curriculum:\n" + "\n".join(
+                f"• {r['course_code']} — {r['course_title']} ({r.get('year') or 'Year not specified'}, {r.get('term') or 'term not specified'})"
+                for r in results
+            )
         return "Laboratory / sessional records in the supplied curriculum:\n" + "\n".join(f"• {r['course_code']} — {r['course_title']}" for r in results)
     if parsed.intent == "YEAR_TERM_QUERY":
         return "\n".join(f"• {r['course_code']} — {r['course_title']} ({r.get('year') or 'Year not specified'}, {r.get('term') or 'term not specified'})" for r in results)

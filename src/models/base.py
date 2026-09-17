@@ -1,7 +1,8 @@
 from __future__ import annotations
 
-import numpy as np
 import hashlib
+import re
+import numpy as np
 
 from ..answer_formatter import excerpt, format_answer
 from ..query_parser import QueryParser
@@ -63,6 +64,17 @@ class BaseRetriever:
                 status = "unsupported"
             elif p.intent == "YEAR_TERM_QUERY" and (p.year or p.term) and not (p.course_code or p.course_title):
                 matches = [c for c in self.courses if (not p.year or c.get("year") == p.year)
+                           and (not p.term or c.get("term") == p.term)]
+                if re.search(r"\btheor(?:y|ies)\b", p.original, re.I):
+                    matches = [c for c in matches if c["course_type"] == "Theory"]
+                elif re.search(r"\b(project|thesis)\b", p.original, re.I):
+                    matches = [c for c in matches if c["course_type"] == "Project"]
+                results = self._results([(c, None) for c in matches], p)
+                status = "ok" if results else "unsupported"
+                details["route"] = "structured_metadata"
+            elif p.intent == "LAB_QUERY" and (p.year or p.term) and not (p.course_code or p.course_title):
+                matches = [c for c in self.courses if c["course_type"] == "Laboratory"
+                           and (not p.year or c.get("year") == p.year)
                            and (not p.term or c.get("term") == p.term)]
                 results = self._results([(c, None) for c in matches], p)
                 status = "ok" if results else "unsupported"

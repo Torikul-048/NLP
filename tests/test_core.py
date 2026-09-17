@@ -98,6 +98,20 @@ def test_year_term_all_results(model):
     assert specific["results"][0]["credits"] == 3.
 
 
+def test_year_term_lab_and_theory_queries(model):
+    labs_4th = model.retrieve("Lab on 4th year ?")
+    assert labs_4th["status"] == "ok"
+    assert len(labs_4th["results"]) == 15
+    assert all(c["course_type"] == "Laboratory" and c["year"] == "4th Year" for c in labs_4th["results"])
+    labs_term = model.retrieve("Which labs are in 4th year 1st term?")
+    assert labs_term["status"] == "ok"
+    assert len(labs_term["results"]) == 10
+    theory_term = model.retrieve("Theory courses in 4th year 1st term")
+    assert theory_term["status"] == "ok"
+    assert len(theory_term["results"]) == 10
+    assert all(c["course_type"] == "Theory" for c in theory_term["results"])
+
+
 def test_exact_security(model):
     result = model.retrieve("Which course covers RSA and ElGamal?")
     assert result["results"][0]["course_code"] == "CSE 4115"

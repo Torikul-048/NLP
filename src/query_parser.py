@@ -65,7 +65,7 @@ class QueryParser:
             p.intent, p.requested_field = "CREDIT_QUERY", "credits"
         elif re.search(r"\b(contact|hours?)\b", lower):
             p.intent, p.requested_field = "CONTACT_HOUR_QUERY", "contact_hours"
-        elif re.search(r"\b(lab|laboratory|sessional)\b", lower):
+        elif re.search(r"\b(labs?|laborator(?:y|ies)|sessionals?)\b", lower):
             p.intent = "LAB_QUERY"
             p.requested_field = "parent_course"
         elif p.year or p.term or re.search(r"\b(year|term|semester)\b", lower):
