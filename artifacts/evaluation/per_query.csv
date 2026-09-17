@@ -1,0 +1,385 @@
+Model,mode,query_id,category,has_answer,accepted,top_score,status,top3,Hit@1,Hit@3,MRR,Recall@3
+model_a,retrieval_only,E001,exact,True,True,0.19965966987540198,ranked,CSE 4115|CSE 4215|CHEM 1207,1.0,1.0,1.0,1.0
+model_a,end_to_end,E001,exact,True,True,0.19965966987540198,ok,CSE 4115,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E002,semantic,True,True,0.16913473821922548,ranked,CSE 4215|CSE 4115|CSE 4213,1.0,1.0,1.0,1.0
+model_a,end_to_end,E002,semantic,True,True,0.16913473821922548,ok,CSE 4215,1.0,1.0,1.0,0.3333333333333333
+model_a,retrieval_only,E003,partial,True,True,0.16685113815589664,ranked,CSE 4115|CHEM 1207|CSE 1101,1.0,1.0,1.0,1.0
+model_a,end_to_end,E003,partial,True,True,0.16685113815589664,ok,CSE 4115,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E004,typo,True,True,0.16685113815589664,ranked,CSE 4115|CHEM 1207|CSE 1101,1.0,1.0,1.0,1.0
+model_a,end_to_end,E004,typo,True,True,0.16685113815589664,ok,CSE 4115,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E005,metadata,True,True,0.31708899697764303,ranked,CSE 4122|CSE 4121|CSE 4224,0.0,1.0,0.5,1.0
+model_a,end_to_end,E005,metadata,True,True,0.31708899697764303,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E006,metadata,True,True,0.6835356227107389,ranked,CSE 4122|CSE 4121|CSE 4108,0.0,1.0,0.5,1.0
+model_a,end_to_end,E006,metadata,True,True,0.6835356227107389,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E007,metadata,True,True,0.25285937621736926,ranked,CSE 4122|CSE 4121|CSE 4105,0.0,1.0,0.5,1.0
+model_a,end_to_end,E007,metadata,True,True,0.25285937621736926,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E008,metadata,True,True,0.2847316856619537,ranked,CSE 4116|CSE 4224|CSE 3102,1.0,1.0,1.0,1.0
+model_a,end_to_end,E008,metadata,True,True,0.2847316856619537,ok,CSE 4116,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E009,ambiguous,True,True,0.13812958787773214,ranked,CSE 4115|CSE 3101|CSE 3109,1.0,1.0,1.0,0.25
+model_a,end_to_end,E009,ambiguous,True,True,0.13812958787773214,ok,CSE 4115,1.0,1.0,1.0,0.25
+model_a,retrieval_only,E010,semantic,True,True,0.11405748661850047,ranked,CSE 4117|CSE 2114|CSE 4106,0.0,0.0,0.045454545454545456,0.0
+model_a,end_to_end,E010,semantic,True,True,0.11405748661850047,ok,CSE 4117,0.0,0.0,0.0,0.0
+model_a,retrieval_only,E011,negative,False,False,0.07060356927178402,ranked,CSE 4249|CHEM 1207|CSE 1101,,,,
+model_a,end_to_end,E011,negative,False,False,0.07060356927178402,no_match,,,,,
+model_a,retrieval_only,E012,out_of_domain,False,False,0.0,ranked,CHEM 1207|CSE 1101|CSE 1107,,,,
+model_a,end_to_end,E012,out_of_domain,False,False,0.0,out_of_scope,,,,,
+model_a,retrieval_only,E013,out_of_domain,False,False,0.0,ranked,CHEM 1207|CSE 1101|CSE 1107,,,,
+model_a,end_to_end,E013,out_of_domain,False,False,0.0,gibberish,,,,,
+model_a,retrieval_only,E014,exact,True,False,0.10474950369420594,ranked,CSE 4000|CSE 2105|CSE 4215,0.0,0.0,0.2,0.0
+model_a,end_to_end,E014,exact,True,False,0.10474950369420594,no_match,,0.0,0.0,0.0,0.0
+model_a,retrieval_only,E015,exact,True,True,0.13004974898651706,ranked,CSE 4121|CSE 4131|CHEM 1207,1.0,1.0,1.0,1.0
+model_a,end_to_end,E015,exact,True,True,0.13004974898651706,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E016,semantic,True,True,0.12538596519555598,ranked,HUM 1108|CSE 4121|CSE 4129,0.0,1.0,0.5,1.0
+model_a,end_to_end,E016,semantic,True,True,0.12538596519555598,ok,HUM 1108,0.0,0.0,0.0,0.0
+model_a,retrieval_only,E017,exact,True,True,0.13565165483817307,ranked,CSE 4111|MATH 2207|MATH 2107,1.0,1.0,1.0,1.0
+model_a,end_to_end,E017,exact,True,True,0.13565165483817307,ok,CSE 4111,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E018,semantic,True,True,0.141219657212556,ranked,CSE 4111|CSE 4131|CSE 4000,1.0,1.0,1.0,1.0
+model_a,end_to_end,E018,semantic,True,True,0.141219657212556,ok,CSE 4111,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E019,exact,True,False,0.09690676102993454,ranked,CSE 2105|CSE 4247|CSE 2201,1.0,1.0,1.0,0.5
+model_a,end_to_end,E019,exact,True,False,0.09690676102993454,no_match,,0.0,0.0,0.0,0.0
+model_a,retrieval_only,E020,semantic,True,True,0.14168744908219816,ranked,CSE 4247|CSE 2105|CSE 1107,0.0,1.0,0.5,0.5
+model_a,end_to_end,E020,semantic,True,True,0.14168744908219816,ok,CSE 4247,0.0,0.0,0.0,0.0
+model_a,retrieval_only,E021,exact,True,True,0.178392052906132,ranked,MATH 2107|CSE 4107|CSE 4117,0.0,1.0,0.5,1.0
+model_a,end_to_end,E021,exact,True,True,0.178392052906132,ok,MATH 2107|CSE 4107,0.0,1.0,0.5,1.0
+model_a,retrieval_only,E022,exact,True,True,0.13721039387109193,ranked,CSE 4241|HUM 1108|ECE 2213,1.0,1.0,1.0,1.0
+model_a,end_to_end,E022,exact,True,True,0.13721039387109193,ok,CSE 4241,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E023,semantic,True,False,0.08351971793500419,ranked,CSE 4241|CSE 4107|EEE 1207,1.0,1.0,1.0,1.0
+model_a,end_to_end,E023,semantic,True,False,0.08351971793500419,no_match,,0.0,0.0,0.0,0.0
+model_a,retrieval_only,E024,exact,True,True,0.25349203064032855,ranked,CSE 4247|CSE 1107|CSE 2105,1.0,1.0,1.0,1.0
+model_a,end_to_end,E024,exact,True,True,0.25349203064032855,ok,CSE 4247,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E025,semantic,True,True,0.20967516732932306,ranked,CSE 4247|CSE 4217|CSE 4235,1.0,1.0,1.0,1.0
+model_a,end_to_end,E025,semantic,True,True,0.20967516732932306,ok,CSE 4247,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E026,exact,True,True,0.13873303811939985,ranked,CSE 4239|CHEM 1207|CSE 1101,1.0,1.0,1.0,1.0
+model_a,end_to_end,E026,exact,True,True,0.13873303811939985,ok,CSE 4239,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E027,semantic,True,False,0.0,ranked,CHEM 1207|CSE 1101|CSE 1107,0.0,0.0,0.0196078431372549,0.0
+model_a,end_to_end,E027,semantic,True,False,0.0,no_match,,0.0,0.0,0.0,0.0
+model_a,retrieval_only,E028,exact,True,True,0.14816951809759613,ranked,CSE 4249|CHEM 1207|CSE 1101,1.0,1.0,1.0,1.0
+model_a,end_to_end,E028,exact,True,True,0.14816951809759613,ok,CSE 4249,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E029,exact,True,True,0.22043102608973864,ranked,CSE 4243|PHY 1107|EEE 1207,1.0,1.0,1.0,0.5
+model_a,end_to_end,E029,exact,True,True,0.22043102608973864,ok,CSE 4243,1.0,1.0,1.0,0.5
+model_a,retrieval_only,E030,exact,True,True,0.1960035043420122,ranked,CSE 4229|CSE 4224|CSE 1204,1.0,1.0,1.0,1.0
+model_a,end_to_end,E030,exact,True,True,0.1960035043420122,ok,CSE 4229,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E031,semantic,True,True,0.12475019527371607,ranked,CSE 4229|ME 2170|CSE 2113,1.0,1.0,1.0,1.0
+model_a,end_to_end,E031,semantic,True,True,0.12475019527371607,ok,CSE 4229,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E032,typo,True,True,0.5184098666518269,ranked,CSE 3102|CSE 3101|CSE 3200,0.0,1.0,0.5,1.0
+model_a,end_to_end,E032,typo,True,True,0.5184098666518269,ok,CSE 3101,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E033,typo,True,True,0.5378057512319255,ranked,CSE 3110|CSE 4219|CSE 3109,0.0,1.0,0.5,1.0
+model_a,end_to_end,E033,typo,True,True,0.5378057512319255,ok,CSE 3109,1.0,1.0,1.0,0.5
+model_a,retrieval_only,E034,ambiguous,True,False,0.10590530367896842,ranked,CSE 4111|CSE 4243|CSE 4115,1.0,1.0,1.0,0.5
+model_a,end_to_end,E034,ambiguous,True,False,0.10590530367896842,no_match,,0.0,0.0,0.0,0.0
+model_a,retrieval_only,E035,ambiguous,True,True,0.21255815788321095,ranked,CSE 4101|CSE 4217|CSE 4243,1.0,1.0,1.0,1.0
+model_a,end_to_end,E035,ambiguous,True,True,0.21255815788321095,ok,CSE 4101|CSE 4217|CSE 4243,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E036,partial,True,True,0.1917782015645878,ranked,CSE 4233|CSE 4217|PHY 1107,1.0,1.0,1.0,1.0
+model_a,end_to_end,E036,partial,True,True,0.1917782015645878,ok,CSE 4233,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E037,metadata,True,True,0.3430216663795225,ranked,CSE 4122|CSE 4224|CSE 3102,1.0,1.0,1.0,1.0
+model_a,end_to_end,E037,metadata,True,True,0.3430216663795225,ok,CSE 4122,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E038,metadata,True,True,0.2907754441772275,ranked,CSE 4112|CSE 4000|CSE 4111,0.0,1.0,0.3333333333333333,1.0
+model_a,end_to_end,E038,metadata,True,True,0.2907754441772275,ok,CSE 4111,1.0,1.0,1.0,1.0
+model_a,retrieval_only,E039,metadata,True,True,0.24300018327085898,ranked,CSE 4000|CSE 3200|CSE 3209,1.0,1.0,1.0,0.047619047619047616
+model_a,end_to_end,E039,metadata,True,True,0.24300018327085898,ok,CSE 4000|CSE 4101|CSE 4102,1.0,1.0,1.0,0.14285714285714285
+model_a,retrieval_only,E040,negative,False,False,0.07684744870464646,ranked,CSE 4121|CSE 4000|CSE 3230,,,,
+model_a,end_to_end,E040,negative,False,False,0.07684744870464646,unsupported,,,,,
+model_a,retrieval_only,E041,negative,False,False,0.07513024048476467,ranked,CSE 3109|CSE 4000|CSE 3230,,,,
+model_a,end_to_end,E041,negative,False,False,0.07513024048476467,unsupported,,,,,
+model_a,retrieval_only,E042,negative,False,True,0.11469507084970386,ranked,CSE 4224|CSE 3102|CSE 3110,,,,
+model_a,end_to_end,E042,negative,False,False,0.11469507084970386,unsupported,,,,,
+model_a,retrieval_only,E043,negative,False,False,0.06837168586839461,ranked,HUM 1108|CHEM 1207|CSE 1101,,,,
+model_a,end_to_end,E043,negative,False,False,0.06837168586839461,no_match,,,,,
+model_a,retrieval_only,E044,negative,False,False,0.0,ranked,CHEM 1207|CSE 1101|CSE 1107,,,,
+model_a,end_to_end,E044,negative,False,False,0.0,no_match,,,,,
+model_a,retrieval_only,E045,negative,False,False,0.0562624977722315,ranked,CSE 4129|HUM 1108|CHEM 1207,,,,
+model_a,end_to_end,E045,negative,False,False,0.0562624977722315,no_match,,,,,
+model_a,retrieval_only,E046,out_of_domain,False,False,0.10101515192092221,ranked,MATH 1107|CSE 4243|CSE 2208,,,,
+model_a,end_to_end,E046,out_of_domain,False,False,0.10101515192092221,no_match,,,,,
+model_a,retrieval_only,E047,out_of_domain,False,False,0.0,ranked,CHEM 1207|CSE 1101|CSE 1107,,,,
+model_a,end_to_end,E047,out_of_domain,False,False,0.0,out_of_scope,,,,,
+model_a,retrieval_only,E048,out_of_domain,False,False,0.0,ranked,CHEM 1207|CSE 1101|CSE 1107,,,,
+model_a,end_to_end,E048,out_of_domain,False,False,0.0,out_of_scope,,,,,
+model_b,retrieval_only,E001,exact,True,False,0.44001197814941406,ranked,CSE 4115|CSE 4215|CSE 3105,1.0,1.0,1.0,1.0
+model_b,end_to_end,E001,exact,True,False,0.44001197814941406,no_match,,0.0,0.0,0.0,0.0
+model_b,retrieval_only,E002,semantic,True,True,0.6585761308670044,ranked,CSE 4115|CSE 4215|CSE 4129,1.0,1.0,1.0,0.6666666666666666
+model_b,end_to_end,E002,semantic,True,True,0.6585761308670044,ok,CSE 4115|CSE 4215|CSE 4129,1.0,1.0,1.0,0.6666666666666666
+model_b,retrieval_only,E003,partial,True,True,0.6125096082687378,ranked,CSE 4115|CSE 4103|CSE 4105,1.0,1.0,1.0,1.0
+model_b,end_to_end,E003,partial,True,True,0.6125096082687378,ok,CSE 4115,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E004,typo,True,True,0.6125096082687378,ranked,CSE 4115|CSE 4103|CSE 4105,1.0,1.0,1.0,1.0
+model_b,end_to_end,E004,typo,True,True,0.6125096082687378,ok,CSE 4115,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E005,metadata,True,False,0.41832536458969116,ranked,CSE 3100|CSE 3120|CSE 2202,0.0,0.0,0.03225806451612903,0.0
+model_b,end_to_end,E005,metadata,True,True,0.41832536458969116,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E006,metadata,True,True,0.9035117626190186,ranked,CSE 4122|CSE 4121|CSE 4245,0.0,1.0,0.5,1.0
+model_b,end_to_end,E006,metadata,True,True,0.9035117626190186,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E007,metadata,True,False,0.41832536458969116,ranked,CSE 3100|CSE 3120|CSE 2202,0.0,0.0,0.03225806451612903,0.0
+model_b,end_to_end,E007,metadata,True,True,0.41832536458969116,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E008,metadata,True,True,0.6317142248153687,ranked,CSE 4106|CSE 3110|CSE 2114,0.0,0.0,0.25,0.0
+model_b,end_to_end,E008,metadata,True,True,0.6317142248153687,ok,CSE 4116,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E009,ambiguous,True,True,0.5531306266784668,ranked,CSE 4115|HUM 3247|CSE 4215,1.0,1.0,1.0,0.5
+model_b,end_to_end,E009,ambiguous,True,True,0.5531306266784668,ok,CSE 4115,1.0,1.0,1.0,0.25
+model_b,retrieval_only,E010,semantic,True,True,0.5740872025489807,ranked,CSE 4115|CSE 4116|CSE 4229,1.0,1.0,1.0,1.0
+model_b,end_to_end,E010,semantic,True,True,0.5740872025489807,ok,CSE 4115|CSE 4116|CSE 4229,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E011,negative,False,False,0.46822819113731384,ranked,CHEM 1207|CSE 4249|CSE 4241,,,,
+model_b,end_to_end,E011,negative,False,False,0.46822819113731384,no_match,,,,,
+model_b,retrieval_only,E012,out_of_domain,False,False,0.45342403650283813,ranked,CSE 4000|CSE 3209|CSE 4215,,,,
+model_b,end_to_end,E012,out_of_domain,False,False,0.45342403650283813,out_of_scope,,,,,
+model_b,retrieval_only,E013,out_of_domain,False,False,0.3919830322265625,ranked,CSE 4211|EEE 2117|CSE 3107,,,,
+model_b,end_to_end,E013,out_of_domain,False,False,0.3919830322265625,gibberish,,,,,
+model_b,retrieval_only,E014,exact,True,True,0.49725908041000366,ranked,CSE 4247|CSE 3107|CSE 2208,0.0,0.0,0.045454545454545456,0.0
+model_b,end_to_end,E014,exact,True,True,0.49725908041000366,ok,CSE 4247,0.0,0.0,0.0,0.0
+model_b,retrieval_only,E015,exact,True,True,0.48470622301101685,ranked,CSE 4121|CSE 4229|HUM 1108,1.0,1.0,1.0,1.0
+model_b,end_to_end,E015,exact,True,True,0.48470622301101685,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E016,semantic,True,True,0.5342421531677246,ranked,HUM 1108|CSE 4215|CSE 4229,0.0,0.0,0.25,0.0
+model_b,end_to_end,E016,semantic,True,True,0.5342421531677246,ok,HUM 1108|CSE 4215|CSE 4229,0.0,0.0,0.0,0.0
+model_b,retrieval_only,E017,exact,True,True,0.5664889812469482,ranked,CSE 2103|CSE 4111|CSE 4203,0.0,1.0,0.5,1.0
+model_b,end_to_end,E017,exact,True,True,0.5664889812469482,ok,CSE 2103|CSE 4111|CSE 4203,0.0,1.0,0.5,1.0
+model_b,retrieval_only,E018,semantic,True,True,0.6504437923431396,ranked,CSE 4111|CSE 4249|CSE 4131,1.0,1.0,1.0,1.0
+model_b,end_to_end,E018,semantic,True,True,0.6504437923431396,ok,CSE 4111|CSE 4249|CSE 4131,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E019,exact,True,True,0.5527048110961914,ranked,CSE 2201|MATH 1207|MATH 2107,0.0,0.0,0.125,0.0
+model_b,end_to_end,E019,exact,True,True,0.5527048110961914,ok,CSE 2201|MATH 1207|MATH 2107,0.0,0.0,0.0,0.0
+model_b,retrieval_only,E020,semantic,True,True,0.5298642516136169,ranked,CSE 2201|CSE 4247|MATH 1207,1.0,1.0,1.0,0.5
+model_b,end_to_end,E020,semantic,True,True,0.5298642516136169,ok,CSE 2201|CSE 4247|MATH 1207,1.0,1.0,1.0,0.5
+model_b,retrieval_only,E021,exact,True,True,0.7255924344062805,ranked,CSE 4107|CSE 4217|MATH 2107,1.0,1.0,1.0,1.0
+model_b,end_to_end,E021,exact,True,True,0.7255924344062805,ok,CSE 4107|CSE 4217|MATH 2107,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E022,exact,True,True,0.6525151133537292,ranked,CSE 4241|CSE 4227|CSE 4107,1.0,1.0,1.0,1.0
+model_b,end_to_end,E022,exact,True,True,0.6525151133537292,ok,CSE 4241|CSE 4227|CSE 4107,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E023,semantic,True,True,0.6375972032546997,ranked,CSE 4241|CSE 4111|CSE 4231,1.0,1.0,1.0,1.0
+model_b,end_to_end,E023,semantic,True,True,0.6375972032546997,ok,CSE 4241|CSE 4111|CSE 4231,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E024,exact,True,True,0.6008507013320923,ranked,CSE 4247|CSE 4101|CSE 4217,1.0,1.0,1.0,1.0
+model_b,end_to_end,E024,exact,True,True,0.6008507013320923,ok,CSE 4247,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E025,semantic,True,True,0.7078492641448975,ranked,CSE 4247|CSE 4237|MATH 2107,1.0,1.0,1.0,1.0
+model_b,end_to_end,E025,semantic,True,True,0.7078492641448975,ok,CSE 4247|CSE 4237|MATH 2107,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E026,exact,True,True,0.5911450386047363,ranked,CSE 4239|CSE 4249|MATH 2207,1.0,1.0,1.0,1.0
+model_b,end_to_end,E026,exact,True,True,0.5911450386047363,ok,CSE 4239|CSE 4249|MATH 2207,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E027,semantic,True,True,0.5863379240036011,ranked,CSE 4239|CSE 4229|CSE 3109,1.0,1.0,1.0,1.0
+model_b,end_to_end,E027,semantic,True,True,0.5863379240036011,ok,CSE 4239|CSE 4229|CSE 3109,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E028,exact,True,False,0.29333168268203735,ranked,PHY 1107|CSE 4111|CHEM 1207,0.0,0.0,0.0625,0.0
+model_b,end_to_end,E028,exact,True,False,0.29333168268203735,no_match,,0.0,0.0,0.0,0.0
+model_b,retrieval_only,E029,exact,True,False,0.42420533299446106,ranked,HUM 3247|CSE 4243|CSE 3209,0.0,1.0,0.5,0.5
+model_b,end_to_end,E029,exact,True,False,0.42420533299446106,no_match,,0.0,0.0,0.0,0.0
+model_b,retrieval_only,E030,exact,True,True,0.6094948053359985,ranked,CSE 4229|CSE 1204|CSE 4224,1.0,1.0,1.0,1.0
+model_b,end_to_end,E030,exact,True,True,0.6094948053359985,ok,CSE 4229,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E031,semantic,True,True,0.5612821578979492,ranked,CSE 4229|HUM 3247|CSE 4129,1.0,1.0,1.0,1.0
+model_b,end_to_end,E031,semantic,True,True,0.5612821578979492,ok,CSE 4229,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E032,typo,True,True,0.8253341317176819,ranked,CSE 3102|CSE 3101|CSE 4219,0.0,1.0,0.5,1.0
+model_b,end_to_end,E032,typo,True,True,0.8253341317176819,ok,CSE 3101,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E033,typo,True,True,0.856831431388855,ranked,CSE 3110|CSE 4219|CSE 3109,0.0,1.0,0.5,1.0
+model_b,end_to_end,E033,typo,True,True,0.856831431388855,ok,CSE 3109,1.0,1.0,1.0,0.5
+model_b,retrieval_only,E034,ambiguous,True,True,0.5788016319274902,ranked,CSE 4111|CSE 4105|CSE 4249,1.0,1.0,1.0,0.5
+model_b,end_to_end,E034,ambiguous,True,True,0.5788016319274902,ok,CSE 4111|CSE 4105|CSE 4249,1.0,1.0,1.0,0.5
+model_b,retrieval_only,E035,ambiguous,True,True,0.5926386117935181,ranked,CSE 4101|CSE 4217|CSE 4107,1.0,1.0,1.0,1.0
+model_b,end_to_end,E035,ambiguous,True,True,0.5926386117935181,ok,CSE 4101|CSE 4217|CSE 4107,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E036,partial,True,True,0.5572060942649841,ranked,CSE 4233|PHY 1107|CSE 4241,1.0,1.0,1.0,1.0
+model_b,end_to_end,E036,partial,True,True,0.5572060942649841,ok,CSE 4233,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E037,metadata,True,False,0.41832536458969116,ranked,CSE 3100|CSE 3120|CSE 2202,0.0,0.0,0.14285714285714285,0.0
+model_b,end_to_end,E037,metadata,True,True,0.41832536458969116,ok,CSE 4122,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E038,metadata,True,True,0.501593291759491,ranked,CSE 4000|HUM 2207|CSE 3200,0.0,0.0,0.02564102564102564,0.0
+model_b,end_to_end,E038,metadata,True,True,0.501593291759491,ok,CSE 4111,1.0,1.0,1.0,1.0
+model_b,retrieval_only,E039,metadata,True,True,0.49892908334732056,ranked,CSE 4000|HUM 2207|MATH 1207,1.0,1.0,1.0,0.047619047619047616
+model_b,end_to_end,E039,metadata,True,True,0.49892908334732056,ok,CSE 4000|CSE 4101|CSE 4102,1.0,1.0,1.0,0.14285714285714285
+model_b,retrieval_only,E040,negative,False,False,0.3673054277896881,ranked,HUM 1108|HUM 3247|CSE 3209,,,,
+model_b,end_to_end,E040,negative,False,False,0.3673054277896881,unsupported,,,,,
+model_b,retrieval_only,E041,negative,False,True,0.6288858652114868,ranked,CSE 3209|CSE 3200|HUM 4207,,,,
+model_b,end_to_end,E041,negative,False,False,0.6288858652114868,unsupported,,,,,
+model_b,retrieval_only,E042,negative,False,False,0.41832536458969116,ranked,CSE 3100|CSE 3120|CSE 2202,,,,
+model_b,end_to_end,E042,negative,False,False,0.41832536458969116,unsupported,,,,,
+model_b,retrieval_only,E043,negative,False,False,0.344380259513855,ranked,ME 2170|HUM 1108|CSE 2208,,,,
+model_b,end_to_end,E043,negative,False,False,0.344380259513855,no_match,,,,,
+model_b,retrieval_only,E044,negative,False,False,0.32803359627723694,ranked,HUM 1108|HUM 1107|ME 2170,,,,
+model_b,end_to_end,E044,negative,False,False,0.32803359627723694,no_match,,,,,
+model_b,retrieval_only,E045,negative,False,True,0.500071108341217,ranked,CSE 4217|CSE 4237|CSE 4129,,,,
+model_b,end_to_end,E045,negative,False,True,0.500071108341217,ok,CSE 4217,,,,
+model_b,retrieval_only,E046,out_of_domain,False,False,0.43684476613998413,ranked,CSE 3200|CSE 3107|CSE 4215,,,,
+model_b,end_to_end,E046,out_of_domain,False,False,0.43684476613998413,no_match,,,,,
+model_b,retrieval_only,E047,out_of_domain,False,True,0.581803023815155,ranked,CSE 4000|HUM 1108|CSE 3209,,,,
+model_b,end_to_end,E047,out_of_domain,False,False,0.581803023815155,out_of_scope,,,,,
+model_b,retrieval_only,E048,out_of_domain,False,False,0.36350542306900024,ranked,CSE 4000|HUM 4207|HUM 2207,,,,
+model_b,end_to_end,E048,out_of_domain,False,False,0.36350542306900024,out_of_scope,,,,,
+model_c,retrieval_only,E001,exact,True,True,0.8967903256416321,ranked,CSE 4111|CSE 4101|CSE 4105,0.0,0.0,0.14285714285714285,0.0
+model_c,end_to_end,E001,exact,True,True,0.8967903256416321,ok,CSE 4111|CSE 4101|CSE 4105,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E002,semantic,True,True,0.8513655662536621,ranked,CSE 4105|CSE 4111|CSE 2113,0.0,0.0,0.14285714285714285,0.0
+model_c,end_to_end,E002,semantic,True,True,0.8513655662536621,ok,CSE 4105|CSE 4111|CSE 2113,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E003,partial,True,True,0.8959305882453918,ranked,CSE 4111|CSE 4105|CSE 3109,0.0,0.0,0.07692307692307693,0.0
+model_c,end_to_end,E003,partial,True,True,0.8959305882453918,ok,CSE 4111|CSE 4105|CSE 3109,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E004,typo,True,True,0.8959305882453918,ranked,CSE 4111|CSE 4105|CSE 3109,0.0,0.0,0.07692307692307693,0.0
+model_c,end_to_end,E004,typo,True,True,0.8959305882453918,ok,CSE 4111|CSE 4105|CSE 3109,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E005,metadata,True,True,0.8031273484230042,ranked,CSE 4111|CSE 4105|CSE 4101,0.0,0.0,0.038461538461538464,0.0
+model_c,end_to_end,E005,metadata,True,True,0.8031273484230042,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_c,retrieval_only,E006,metadata,True,True,0.806151270866394,ranked,CSE 2113|CSE 4111|CSE 4105,0.0,0.0,0.1,0.0
+model_c,end_to_end,E006,metadata,True,True,0.806151270866394,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_c,retrieval_only,E007,metadata,True,True,0.8031273484230042,ranked,CSE 4111|CSE 4105|CSE 4101,0.0,0.0,0.038461538461538464,0.0
+model_c,end_to_end,E007,metadata,True,True,0.8031273484230042,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_c,retrieval_only,E008,metadata,True,False,0.14180459082126617,ranked,CSE 4102|CSE 1206|CSE 4122,0.0,0.0,0.05555555555555555,0.0
+model_c,end_to_end,E008,metadata,True,True,0.14180459082126617,ok,CSE 4116,1.0,1.0,1.0,1.0
+model_c,retrieval_only,E009,ambiguous,True,True,0.8555847406387329,ranked,CSE 4105|CSE 4111|CSE 3101,0.0,0.0,0.1,0.0
+model_c,end_to_end,E009,ambiguous,True,True,0.8555847406387329,ok,CSE 4105|CSE 4111,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E010,semantic,True,True,0.9064676761627197,ranked,CSE 4105|CSE 4111|CSE 4101,0.0,0.0,0.125,0.0
+model_c,end_to_end,E010,semantic,True,True,0.9064676761627197,ok,CSE 4105|CSE 4111|CSE 4101,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E011,negative,False,True,0.7916229367256165,ranked,CSE 4105|CSE 4111|CSE 2113,,,,
+model_c,end_to_end,E011,negative,False,True,0.7916229367256165,ok,CSE 4105|CSE 4111,,,,
+model_c,retrieval_only,E012,out_of_domain,False,False,0.2907698452472687,ranked,CSE 4115|CSE 4215|CSE 4129,,,,
+model_c,end_to_end,E012,out_of_domain,False,False,0.2907698452472687,out_of_scope,,,,,
+model_c,retrieval_only,E013,out_of_domain,False,True,0.8655152320861816,ranked,CSE 4111|CSE 4105|CSE 4101,,,,
+model_c,end_to_end,E013,out_of_domain,False,False,0.8655152320861816,gibberish,,,,,
+model_c,retrieval_only,E014,exact,True,False,0.7484620213508606,ranked,CSE 4105|CSE 4111|CSE 2113,0.0,0.0,0.16666666666666666,0.0
+model_c,end_to_end,E014,exact,True,False,0.7484620213508606,no_match,,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E015,exact,True,True,0.8187130093574524,ranked,CSE 4105|CSE 2113|CSE 4111,0.0,0.0,0.058823529411764705,0.0
+model_c,end_to_end,E015,exact,True,True,0.8187130093574524,ok,CSE 4105|CSE 2113|CSE 4111,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E016,semantic,True,False,0.6334764361381531,ranked,CSE 4115|CSE 4121|CSE 4215,0.0,1.0,0.5,1.0
+model_c,end_to_end,E016,semantic,True,False,0.6334764361381531,no_match,,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E017,exact,True,True,0.9231561422348022,ranked,CSE 4105|CSE 4111|CSE 3109,0.0,1.0,0.5,1.0
+model_c,end_to_end,E017,exact,True,True,0.9231561422348022,ok,CSE 4105|CSE 4111|CSE 3109,0.0,1.0,0.5,1.0
+model_c,retrieval_only,E018,semantic,True,True,0.9161857962608337,ranked,CSE 4111|CSE 3109|CSE 3209,1.0,1.0,1.0,1.0
+model_c,end_to_end,E018,semantic,True,True,0.9161857962608337,ok,CSE 4111|CSE 3109|CSE 3209,1.0,1.0,1.0,1.0
+model_c,retrieval_only,E019,exact,True,False,0.38428953289985657,ranked,CSE 4215|CSE 4129|CSE 1203,0.0,0.0,0.034482758620689655,0.0
+model_c,end_to_end,E019,exact,True,False,0.38428953289985657,no_match,,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E020,semantic,True,False,0.5397394895553589,ranked,CSE 4215|CSE 4115|CSE 4129,0.0,0.0,0.045454545454545456,0.0
+model_c,end_to_end,E020,semantic,True,False,0.5397394895553589,no_match,,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E021,exact,True,True,0.9361559748649597,ranked,CSE 4111|CSE 3109|CSE 1203,0.0,0.0,0.0196078431372549,0.0
+model_c,end_to_end,E021,exact,True,True,0.9361559748649597,ok,CSE 4111|CSE 3109|CSE 1203,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E022,exact,True,True,0.9234708547592163,ranked,CSE 4111|CSE 4115|CSE 3209,0.0,0.0,0.014084507042253521,0.0
+model_c,end_to_end,E022,exact,True,True,0.9234708547592163,ok,CSE 4111|CSE 4115|CSE 3209,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E023,semantic,True,False,0.4571812152862549,ranked,CSE 4129|CSE 4215|CSE 2103,0.0,0.0,0.013888888888888888,0.0
+model_c,end_to_end,E023,semantic,True,False,0.4571812152862549,no_match,,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E024,exact,True,True,0.8490284085273743,ranked,CSE 4111|CSE 4101|CSE 4105,0.0,0.0,0.037037037037037035,0.0
+model_c,end_to_end,E024,exact,True,True,0.8490284085273743,ok,CSE 4111|CSE 4101|CSE 4105,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E025,semantic,True,True,0.9125555753707886,ranked,CSE 4115|CSE 4101|CSE 4111,0.0,0.0,0.038461538461538464,0.0
+model_c,end_to_end,E025,semantic,True,True,0.9125555753707886,ok,CSE 4115|CSE 4101|CSE 4111,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E026,exact,True,True,0.960114061832428,ranked,CSE 4111|CSE 3109|CSE 4105,0.0,0.0,0.08333333333333333,0.0
+model_c,end_to_end,E026,exact,True,True,0.960114061832428,ok,CSE 4111|CSE 3109|CSE 4105,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E027,semantic,True,True,0.8932085037231445,ranked,CSE 4111|CSE 2113|CSE 3209,0.0,0.0,0.1,0.0
+model_c,end_to_end,E027,semantic,True,True,0.8932085037231445,ok,CSE 4111|CSE 2113|CSE 3209,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E028,exact,True,True,0.9195072650909424,ranked,CSE 4111|CSE 4105|CSE 4101,0.0,0.0,0.1111111111111111,0.0
+model_c,end_to_end,E028,exact,True,True,0.9195072650909424,ok,CSE 4111|CSE 4105|CSE 4101,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E029,exact,True,True,0.8535480499267578,ranked,CSE 4105|CSE 4111|CSE 2113,0.0,0.0,0.027777777777777776,0.0
+model_c,end_to_end,E029,exact,True,True,0.8535480499267578,ok,CSE 4105|CSE 4111|CSE 2113,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E030,exact,True,False,0.7575046420097351,ranked,CSE 2113|CSE 4105|CSE 4111,0.0,0.0,0.024390243902439025,0.0
+model_c,end_to_end,E030,exact,True,True,0.7575046420097351,ok,CSE 4229,1.0,1.0,1.0,1.0
+model_c,retrieval_only,E031,semantic,True,True,0.8855404853820801,ranked,CSE 4105|CSE 4111|CSE 2113,0.0,0.0,0.030303030303030304,0.0
+model_c,end_to_end,E031,semantic,True,True,0.8855404853820801,ok,CSE 4105|CSE 4111|CSE 2113,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E032,typo,True,True,0.9262905120849609,ranked,CSE 4105|CSE 3101|CSE 4111,0.0,1.0,0.5,1.0
+model_c,end_to_end,E032,typo,True,True,0.9262905120849609,ok,CSE 3101,1.0,1.0,1.0,1.0
+model_c,retrieval_only,E033,typo,True,True,0.9410848021507263,ranked,CSE 4105|CSE 4111|CSE 3109,0.0,1.0,0.3333333333333333,0.5
+model_c,end_to_end,E033,typo,True,True,0.9410848021507263,ok,CSE 3109,1.0,1.0,1.0,0.5
+model_c,retrieval_only,E034,ambiguous,True,True,0.9227756261825562,ranked,CSE 4111|CSE 4105|CSE 4101,1.0,1.0,1.0,0.5
+model_c,end_to_end,E034,ambiguous,True,True,0.9227756261825562,ok,CSE 4111|CSE 4105|CSE 4101,1.0,1.0,1.0,0.5
+model_c,retrieval_only,E035,ambiguous,True,True,0.8443967700004578,ranked,CSE 2113|CSE 4105|CSE 4111,0.0,0.0,0.25,0.0
+model_c,end_to_end,E035,ambiguous,True,True,0.8443967700004578,ok,CSE 2113|CSE 4105|CSE 4111,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E036,partial,True,True,0.8101887702941895,ranked,CSE 2113|CSE 4105|CSE 4111,0.0,0.0,0.022222222222222223,0.0
+model_c,end_to_end,E036,partial,True,True,0.8101887702941895,ok,CSE 2113,0.0,0.0,0.0,0.0
+model_c,retrieval_only,E037,metadata,True,True,0.8031273484230042,ranked,CSE 4111|CSE 4105|CSE 4101,0.0,0.0,0.037037037037037035,0.0
+model_c,end_to_end,E037,metadata,True,True,0.8031273484230042,ok,CSE 4122,1.0,1.0,1.0,1.0
+model_c,retrieval_only,E038,metadata,True,True,0.8008646368980408,ranked,CSE 4115|CSE 4111|CSE 4105,0.0,1.0,0.5,1.0
+model_c,end_to_end,E038,metadata,True,True,0.8008646368980408,ok,CSE 4111,1.0,1.0,1.0,1.0
+model_c,retrieval_only,E039,metadata,True,False,0.244886115193367,ranked,CSE 3219|CSE 2113|CSE 4215,0.0,0.0,0.25,0.0
+model_c,end_to_end,E039,metadata,True,True,0.244886115193367,ok,CSE 4000|CSE 4101|CSE 4102,1.0,1.0,1.0,0.14285714285714285
+model_c,retrieval_only,E040,negative,False,True,0.7929920554161072,ranked,CSE 4101|CSE 4111|CSE 2113,,,,
+model_c,end_to_end,E040,negative,False,False,0.7929920554161072,unsupported,,,,,
+model_c,retrieval_only,E041,negative,False,False,0.22299884259700775,ranked,CSE 4215|CSE 4129|CSE 4115,,,,
+model_c,end_to_end,E041,negative,False,False,0.22299884259700775,unsupported,,,,,
+model_c,retrieval_only,E042,negative,False,True,0.8031273484230042,ranked,CSE 4111|CSE 4105|CSE 4101,,,,
+model_c,end_to_end,E042,negative,False,False,0.8031273484230042,unsupported,,,,,
+model_c,retrieval_only,E043,negative,False,False,0.5704824328422546,ranked,CSE 2113|CSE 4101|CSE 4105,,,,
+model_c,end_to_end,E043,negative,False,False,0.5704824328422546,no_match,,,,,
+model_c,retrieval_only,E044,negative,False,False,0.4964847266674042,ranked,CSE 2113|CSE 4105|CSE 4101,,,,
+model_c,end_to_end,E044,negative,False,False,0.4964847266674042,no_match,,,,,
+model_c,retrieval_only,E045,negative,False,True,0.8498965501785278,ranked,CSE 4105|CSE 2113|CSE 4111,,,,
+model_c,end_to_end,E045,negative,False,True,0.8498965501785278,ok,CSE 4105|CSE 2113|CSE 4111,,,,
+model_c,retrieval_only,E046,out_of_domain,False,False,0.5508397221565247,ranked,CSE 4215|CSE 4115|CSE 4121,,,,
+model_c,end_to_end,E046,out_of_domain,False,False,0.5508397221565247,no_match,,,,,
+model_c,retrieval_only,E047,out_of_domain,False,False,0.04885093495249748,ranked,CSE 4215|CSE 4129|CSE 4115,,,,
+model_c,end_to_end,E047,out_of_domain,False,False,0.04885093495249748,out_of_scope,,,,,
+model_c,retrieval_only,E048,out_of_domain,False,False,0.31906846165657043,ranked,CSE 2113|CSE 4105|CSE 4111,,,,
+model_c,end_to_end,E048,out_of_domain,False,False,0.31906846165657043,out_of_scope,,,,,
+model_d,retrieval_only,E001,exact,True,False,0.2372475117444992,ranked,CSE 4115|CSE 1107|CSE 4215,1.0,1.0,1.0,1.0
+model_d,end_to_end,E001,exact,True,False,0.2372475117444992,no_match,,0.0,0.0,0.0,0.0
+model_d,retrieval_only,E002,semantic,True,True,0.3679073750972748,ranked,CSE 4115|CSE 4215|CSE 4229,1.0,1.0,1.0,0.6666666666666666
+model_d,end_to_end,E002,semantic,True,True,0.3679073750972748,ok,CSE 4115,1.0,1.0,1.0,0.3333333333333333
+model_d,retrieval_only,E003,partial,True,True,0.5366948843002319,ranked,CSE 4115|CSE 4211|CSE 1107,1.0,1.0,1.0,1.0
+model_d,end_to_end,E003,partial,True,True,0.5366948843002319,ok,CSE 4115|CSE 4211|CSE 1107,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E004,typo,True,True,0.5366948843002319,ranked,CSE 4115|CSE 4211|CSE 1107,1.0,1.0,1.0,1.0
+model_d,end_to_end,E004,typo,True,True,0.5366948843002319,ok,CSE 4115|CSE 4211|CSE 1107,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E005,metadata,True,True,0.5775980949401855,ranked,CSE 4122|CSE 4116|CSE 4108,0.0,0.0,0.010309278350515464,0.0
+model_d,end_to_end,E005,metadata,True,True,0.5775980949401855,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E006,metadata,True,True,0.6521540284156799,ranked,CSE 4121|CSE 4122|CSE 2209,1.0,1.0,1.0,1.0
+model_d,end_to_end,E006,metadata,True,True,0.6521540284156799,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E007,metadata,True,True,0.5536361932754517,ranked,CSE 4122|CSE 4224|CSE 3210,0.0,0.0,0.01020408163265306,0.0
+model_d,end_to_end,E007,metadata,True,True,0.5536361932754517,ok,CSE 4121,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E008,metadata,True,True,0.7676485776901245,ranked,CSE 4116|CSE 4112|CSE 4106,1.0,1.0,1.0,1.0
+model_d,end_to_end,E008,metadata,True,True,0.7676485776901245,ok,CSE 4116,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E009,ambiguous,True,True,0.5059710741043091,ranked,CSE 4115|CSE 4229|HUM 3247,1.0,1.0,1.0,0.5
+model_d,end_to_end,E009,ambiguous,True,True,0.5059710741043091,ok,CSE 4115|CSE 4229|HUM 3247,1.0,1.0,1.0,0.5
+model_d,retrieval_only,E010,semantic,True,True,0.526772141456604,ranked,CSE 4115|CSE 3101|CSE 4116,1.0,1.0,1.0,1.0
+model_d,end_to_end,E010,semantic,True,True,0.526772141456604,ok,CSE 4115|CSE 3101|CSE 4116,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E011,negative,False,False,0.22576254606246948,ranked,CSE 4249|CSE 3230|CSE 4241,,,,
+model_d,end_to_end,E011,negative,False,False,0.22576254606246948,no_match,,,,,
+model_d,retrieval_only,E012,out_of_domain,False,False,0.15358388423919678,ranked,EEE 2117|MATH 2107|EEE 1207,,,,
+model_d,end_to_end,E012,out_of_domain,False,False,0.15358388423919678,out_of_scope,,,,,
+model_d,retrieval_only,E013,out_of_domain,False,False,0.20281101763248444,ranked,CSE 3209|MATH 2207|CSE 1203,,,,
+model_d,end_to_end,E013,out_of_domain,False,False,0.20281101763248444,gibberish,,,,,
+model_d,retrieval_only,E014,exact,True,True,0.36657872796058655,ranked,CSE 4247|CSE 1107|CSE 2105,0.0,0.0,0.2,0.0
+model_d,end_to_end,E014,exact,True,True,0.36657872796058655,ok,CSE 4247|CSE 1107|CSE 2105,0.0,0.0,0.0,0.0
+model_d,retrieval_only,E015,exact,True,True,0.5261157155036926,ranked,CSE 4121|HUM 1107|CSE 4131,1.0,1.0,1.0,1.0
+model_d,end_to_end,E015,exact,True,True,0.5261157155036926,ok,CSE 4121|HUM 1107|CSE 4131,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E016,semantic,True,True,0.26447975635528564,ranked,HUM 1107|CSE 4129|CSE 4121,0.0,1.0,0.3333333333333333,1.0
+model_d,end_to_end,E016,semantic,True,True,0.26447975635528564,ok,HUM 1107,0.0,0.0,0.0,0.0
+model_d,retrieval_only,E017,exact,True,True,0.4768794775009155,ranked,CSE 4111|CSE 4131|CSE 4239,1.0,1.0,1.0,1.0
+model_d,end_to_end,E017,exact,True,True,0.4768794775009155,ok,CSE 4111|CSE 4131|CSE 4239,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E018,semantic,True,True,0.3883148431777954,ranked,CSE 4111|CSE 4131|CSE 4121,1.0,1.0,1.0,1.0
+model_d,end_to_end,E018,semantic,True,True,0.3883148431777954,ok,CSE 4111|CSE 4131|CSE 4121,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E019,exact,True,True,0.48233944177627563,ranked,CSE 4247|CSE 2201|CSE 2105,0.0,1.0,0.3333333333333333,0.5
+model_d,end_to_end,E019,exact,True,True,0.48233944177627563,ok,CSE 4247|CSE 2201|CSE 2105,0.0,1.0,0.3333333333333333,0.5
+model_d,retrieval_only,E020,semantic,True,True,0.41447389125823975,ranked,CSE 4247|CSE 2201|CSE 4237,0.0,1.0,0.5,0.5
+model_d,end_to_end,E020,semantic,True,True,0.41447389125823975,ok,CSE 4247|CSE 2201|CSE 4237,0.0,1.0,0.5,0.5
+model_d,retrieval_only,E021,exact,True,True,0.524150013923645,ranked,CSE 4107|MATH 2107|ECE 2213,1.0,1.0,1.0,1.0
+model_d,end_to_end,E021,exact,True,True,0.524150013923645,ok,CSE 4107|MATH 2107|ECE 2213,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E022,exact,True,True,0.48061254620552063,ranked,CSE 4241|EEE 1207|CSE 4227,1.0,1.0,1.0,1.0
+model_d,end_to_end,E022,exact,True,True,0.48061254620552063,ok,CSE 4241|EEE 1207,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E023,semantic,True,True,0.49688655138015747,ranked,CSE 4241|EEE 1207|CSE 4227,1.0,1.0,1.0,1.0
+model_d,end_to_end,E023,semantic,True,True,0.49688655138015747,ok,CSE 4241|EEE 1207|CSE 4227,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E024,exact,True,True,0.6157782077789307,ranked,CSE 4247|CSE 1107|CSE 2105,1.0,1.0,1.0,1.0
+model_d,end_to_end,E024,exact,True,True,0.6157782077789307,ok,CSE 4247|CSE 1107,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E025,semantic,True,True,0.5317573547363281,ranked,CSE 4247|CSE 1107|CSE 4237,1.0,1.0,1.0,1.0
+model_d,end_to_end,E025,semantic,True,True,0.5317573547363281,ok,CSE 4247|CSE 1107,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E026,exact,True,True,0.45609936118125916,ranked,CSE 4239|CSE 4249|CSE 4229,1.0,1.0,1.0,1.0
+model_d,end_to_end,E026,exact,True,True,0.45609936118125916,ok,CSE 4239,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E027,semantic,True,True,0.3696299195289612,ranked,CSE 4239|CSE 4229|CSE 4131,1.0,1.0,1.0,1.0
+model_d,end_to_end,E027,semantic,True,True,0.3696299195289612,ok,CSE 4239|CSE 4229,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E028,exact,True,True,0.34728431701660156,ranked,CSE 4249|CSE 2200|CSE 1101,1.0,1.0,1.0,1.0
+model_d,end_to_end,E028,exact,True,True,0.34728431701660156,ok,CSE 4249,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E029,exact,True,False,0.1304798722267151,ranked,HUM 2207|EEE 1207|HUM 3247,0.0,0.0,0.058823529411764705,0.0
+model_d,end_to_end,E029,exact,True,False,0.1304798722267151,no_match,,0.0,0.0,0.0,0.0
+model_d,retrieval_only,E030,exact,True,True,0.6473957896232605,ranked,CSE 4229|CSE 4116|CSE 4108,1.0,1.0,1.0,1.0
+model_d,end_to_end,E030,exact,True,True,0.6473957896232605,ok,CSE 4229,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E031,semantic,True,True,0.49127197265625,ranked,CSE 4229|CSE 4227|CSE 3230,1.0,1.0,1.0,1.0
+model_d,end_to_end,E031,semantic,True,True,0.49127197265625,ok,CSE 4229|CSE 4227|CSE 3230,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E032,typo,True,True,0.578404426574707,ranked,CSE 3101|CSE 3102|CSE 2103,1.0,1.0,1.0,1.0
+model_d,end_to_end,E032,typo,True,True,0.578404426574707,ok,CSE 3101,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E033,typo,True,True,0.5924360752105713,ranked,CSE 4219|CSE 3109|CSE 3110,1.0,1.0,1.0,1.0
+model_d,end_to_end,E033,typo,True,True,0.5924360752105713,ok,CSE 3109,1.0,1.0,1.0,0.5
+model_d,retrieval_only,E034,ambiguous,True,True,0.4302756190299988,ranked,CSE 4111|CSE 4131|CSE 3209,1.0,1.0,1.0,1.0
+model_d,end_to_end,E034,ambiguous,True,True,0.4302756190299988,ok,CSE 4111|CSE 4131|CSE 3209,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E035,ambiguous,True,True,0.5289397835731506,ranked,CSE 4101|CSE 4217|CSE 4131,1.0,1.0,1.0,1.0
+model_d,end_to_end,E035,ambiguous,True,True,0.5289397835731506,ok,CSE 4101|CSE 4217|CSE 4131,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E036,partial,True,True,0.5399308800697327,ranked,CSE 4233|CSE 4217|CSE 3209,1.0,1.0,1.0,1.0
+model_d,end_to_end,E036,partial,True,True,0.5399308800697327,ok,CSE 4233|CSE 4217|CSE 3209,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E037,metadata,True,True,0.5794312953948975,ranked,CSE 4122|CSE 4116|CSE 4108,1.0,1.0,1.0,1.0
+model_d,end_to_end,E037,metadata,True,True,0.5794312953948975,ok,CSE 4122,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E038,metadata,True,True,0.5019372701644897,ranked,CSE 3220|CSE 3230|CSE 4000,0.0,0.0,0.01020408163265306,0.0
+model_d,end_to_end,E038,metadata,True,True,0.5019372701644897,ok,CSE 4111,1.0,1.0,1.0,1.0
+model_d,retrieval_only,E039,metadata,True,False,0.16943050920963287,ranked,CSE 4000|HUM 1108|IEM 4227,1.0,1.0,1.0,0.047619047619047616
+model_d,end_to_end,E039,metadata,True,True,0.16943050920963287,ok,CSE 4000|CSE 4101|CSE 4102,1.0,1.0,1.0,0.14285714285714285
+model_d,retrieval_only,E040,negative,False,True,0.528085470199585,ranked,CSE 2200|CSE 3230|CSE 3100,,,,
+model_d,end_to_end,E040,negative,False,False,0.528085470199585,unsupported,,,,,
+model_d,retrieval_only,E041,negative,False,True,0.5674154758453369,ranked,CSE 3230|CSE 3100|CSE 3200,,,,
+model_d,end_to_end,E041,negative,False,False,0.5674154758453369,unsupported,,,,,
+model_d,retrieval_only,E042,negative,False,True,0.5428277850151062,ranked,CSE 4116|CSE 3220|CSE 4108,,,,
+model_d,end_to_end,E042,negative,False,False,0.5428277850151062,unsupported,,,,,
+model_d,retrieval_only,E043,negative,False,False,0.11137447506189346,ranked,HUM 2207|MATH 2207|CSE 3107,,,,
+model_d,end_to_end,E043,negative,False,False,0.11137447506189346,no_match,,,,,
+model_d,retrieval_only,E044,negative,False,False,0.09438979625701904,ranked,CSE 4219|CSE 3107|CSE 4235,,,,
+model_d,end_to_end,E044,negative,False,False,0.09438979625701904,no_match,,,,,
+model_d,retrieval_only,E045,negative,False,False,0.2221531867980957,ranked,CSE 4000|MATH 1207|CSE 3209,,,,
+model_d,end_to_end,E045,negative,False,False,0.2221531867980957,no_match,,,,,
+model_d,retrieval_only,E046,out_of_domain,False,False,0.1603238880634308,ranked,CSE 4115|CSE 3107|CSE 3209,,,,
+model_d,end_to_end,E046,out_of_domain,False,False,0.1603238880634308,no_match,,,,,
+model_d,retrieval_only,E047,out_of_domain,False,False,0.1032196432352066,ranked,CSE 4115|CSE 4249|ME 2170,,,,
+model_d,end_to_end,E047,out_of_domain,False,False,0.1032196432352066,out_of_scope,,,,,
+model_d,retrieval_only,E048,out_of_domain,False,False,0.0932086780667305,ranked,CSE 3209|CSE 4105|EEE 1207,,,,
+model_d,end_to_end,E048,out_of_domain,False,False,0.0932086780667305,out_of_scope,,,,,

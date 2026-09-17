@@ -1,0 +1,72 @@
+{
+  "source_pdf": "CourseContentsCSE_14_08_2022.pdf",
+  "pdf_sha256": "81f0683de2d2c15ef8606712d32975edc728ecb0d13e5f46671d602dd11a1725",
+  "pages": 19,
+  "records": 108,
+  "unique_course_codes": 107,
+  "by_type": {
+    "Theory": 63,
+    "Laboratory": 40,
+    "Project": 5
+  },
+  "by_optional_group": {
+    "Compulsory": 67,
+    "Optional-I": 14,
+    "Optional-II": 17,
+    "Optional-III": 10
+  },
+  "missing_credits": [],
+  "missing_contact_hours": [],
+  "source_conflicts": [
+    {
+      "course_code": "EEE 2118",
+      "conflicts": [
+        {
+          "field": "contact_hours",
+          "syllabus": "0L+3P",
+          "summary": "0L+1.5P",
+          "summary_page": 4
+        }
+      ]
+    },
+    {
+      "course_code": "CSE 4101",
+      "conflicts": [
+        {
+          "field": "contact_hours",
+          "syllabus": "0L+3P",
+          "summary": "3L+0P",
+          "summary_page": 11
+        }
+      ]
+    },
+    {
+      "course_code": "CSE 4102",
+      "conflicts": [
+        {
+          "field": "contact_hours",
+          "syllabus": "0L+3P",
+          "summary": "0L+1.5P",
+          "summary_page": 11
+        }
+      ]
+    },
+    {
+      "course_code": "HUM 4207",
+      "conflicts": [
+        {
+          "field": "credits",
+          "syllabus": 3.0,
+          "summary": 2.0,
+          "summary_page": 14
+        },
+        {
+          "field": "contact_hours",
+          "syllabus": "3L+0T+0P",
+          "summary": "2L+0P",
+          "summary_page": 14
+        }
+      ]
+    }
+  ]
+}

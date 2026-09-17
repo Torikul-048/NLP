@@ -1,0 +1,93 @@
+query_id,query_text,positive_course_code,query_type,split,group_id
+T001,Which subject introduces pointer arithmetic?,CSE 1101,exact,train,pointers
+T002,Where can I study dynamic memory allocation in C?,CSE 1101,semantic,train,c_memory
+T003,Which course explains enumeration and unions?,CSE 1101,exact,train,c_types
+T004,Where are equivalence relations covered?,CSE 1107,exact,train,equivalence
+T005,Where do we study permutations and combinatorics?,CSE 1107,exact,train,counting
+T006,Which course covers modular arithmetic and rings?,CSE 1107,exact,train,rings
+T007,Where are combinational circuits introduced?,CSE 1203,exact,train,combinational
+T008,Which subject explains flip flops and counters?,CSE 1203,exact,train,flipflops
+T009,Where do we study inheritance and polymorphism?,CSE 1205,exact,train,inheritance
+T010,Which class explains constructors and destructors?,CSE 1205,exact,train,constructors
+T011,Where is the standard template library taught?,CSE 1205,exact,train,stl
+T012,Which course introduces processor instruction sets and assembly language?,CSE 2103,semantic,train,assembly
+T013,Where are programmable timers and DMA controllers covered?,CSE 2103,exact,train,dma
+T014,Which subject explains ARM Cortex M3 architecture?,CSE 2103,exact,train,arm
+T015,Where are stacks and queues taught?,CSE 2105,exact,train,stacks
+T016,Which subject teaches linked list insertion and deletion?,CSE 2105,exact,train,linked_lists
+T017,Where is the Tower of Hanoi discussed?,CSE 2105,exact,train,hanoi
+T018,Which course covers RAID and optical memory?,CSE 2113,exact,train,raid
+T019,Where is instruction pipelining taught?,CSE 2113,exact,train,pipelining
+T020,Which subject covers reduced instruction set computers?,CSE 2113,exact,train,risc
+T021,Where are finite automata introduced?,CSE 2209,exact,train,automata
+T022,Which course studies Turing machines?,CSE 2209,exact,train,turing
+T023,Where can I learn about process synchronization?,CSE 3101,exact,train,synchronization
+T024,Which course discusses deadlocks?,CSE 3101,exact,train,deadlock
+T025,Where is virtual memory management covered?,CSE 3101,exact,train,virtual_memory
+T026,Which course studies SQL?,CSE 3109,exact,train,sql
+T027,Where are database transactions and concurrency control taught?,CSE 3109,exact,train,transactions
+T028,Where is entity relationship modeling discussed?,CSE 3109,semantic,train,er_model
+T029,Which course introduces intelligent agents?,CSE 3209,exact,train,agents
+T030,Where do we study alpha beta pruning?,CSE 3209,exact,train,alpha_beta
+T031,Which subject discusses fuzzy logic and uncertain reasoning?,CSE 3209,exact,train,fuzzy
+T032,Where are symbol tables explained?,CSE 3211,exact,train,symbol_tables
+T033,Which course discusses register allocation in code generation?,CSE 3211,exact,train,register_allocation
+T034,Where can I study lexical analyzers?,CSE 3211,exact,train,lexical_analyzers
+T035,Which course covers software maintenance?,CSE 3219,exact,train,maintenance
+T036,Where are software project risks discussed?,CSE 3219,semantic,train,project_risk
+T037,Where do we study polygon filling and rasterization?,CSE 4101,exact,train,rasterization
+T038,Which subject covers lighting and shading?,CSE 4101,exact,train,shading
+T039,Where are TCP congestion controls explained?,CSE 4105,exact,train,tcp
+T040,Which subject teaches IPv6 addressing?,CSE 4105,exact,train,ipv6
+T041,Where are DNS and electronic mail protocols covered?,CSE 4105,exact,train,dns
+T042,Which course explains symmetric cryptography using AES and DES?,CSE 4115,exact,train,symmetric_ciphers
+T043,Where can I study hash functions MD and SHA?,CSE 4115,exact,train,hash_functions
+T044,Which subject covers secret splitting and secret sharing?,CSE 4115,exact,train,secret_sharing
+T045,Where are genetic algorithms taught?,CSE 4111,exact,train,genetic_algorithms
+T046,Which subject covers ant colony optimization?,CSE 4111,exact,train,ant_colony
+T047,Where can I study dimensionality reduction using PCA?,CSE 4111,exact,train,pca
+T048,Which course explains n gram language models?,CSE 4121,exact,train,ngram
+T049,Where is text to speech studied?,CSE 4121,exact,train,tts
+T050,Which subject discusses machine translation and word alignment?,CSE 4121,exact,train,translation
+T051,Where are Monte Carlo simulation models studied?,CSE 4117,exact,train,simulation
+T052,Which course explains wearable computing and smart homes?,CSE 4129,exact,train,wearables
+T053,Where is template matching for image recognition taught?,CSE 4131,exact,train,template_matching
+T054,Where do we study reliability and redundancy allocation?,CSE 4213,exact,train,redundancy
+T055,Which subject teaches electronic payment systems?,CSE 4215,exact,train,electronic_payments
+T056,Where do we study distributed database recovery?,CSE 4219,exact,train,distributed_recovery
+T057,Which course introduces genomic sequence alignment?,CSE 4249,exact,train,genomics
+T058,Where are software architectural styles and frameworks taught?,CSE 4251,exact,train,architecture_styles
+T059,Can you recommend a birthday gift for my uncle?,,out_of_domain,train,gift_train
+T060,What is the weather tomorrow?,,out_of_domain,train,weather_train
+T061,How to cook pasta?,,out_of_domain,train,cooking_train
+T062,Find a course in veterinary dentistry,,negative,train,veterinary
+T063,Which course teaches medieval pottery?,,negative,train,pottery
+T064,I want lessons on ballet choreography,,negative,train,ballet
+T065,Where can I learn scuba diving?,,negative,train,diving
+T066,Who starred in the newest cinema blockbuster?,,out_of_domain,train,cinema
+T067,How do I grow tulips in a garden?,,out_of_domain,train,gardening
+T068,Which course covers calligraphy with a fountain pen?,,negative,train,calligraphy
+V001,Which course discusses file access and command line parameters?,CSE 1101,exact,validation,file_access
+V002,Where are recurrence relations discussed?,CSE 1107,exact,validation,recurrence
+V003,Which course covers Boolean minimization?,CSE 1203,exact,validation,boolean_minimization
+V004,Where do we learn sorting with heaps?,CSE 2105,semantic,validation,heap_sort
+V005,Which course studies cache design?,CSE 2113,exact,validation,cache_design
+V006,Where can I learn CPU scheduling?,CSE 3101,exact,validation,cpu_scheduling
+V007,Which subject teaches database normalization?,CSE 3109,exact,validation,normalization
+V008,Which course studies heuristic search?,CSE 3209,exact,validation,heuristic_search
+V009,Where are LL and LR parsers studied?,CSE 3211,exact,validation,lr_parsing
+V010,Where can I study intrusion detection and firewalls?,CSE 4115,exact,validation,firewalls
+V011,Which course teaches logistic regression?,CSE 4111,exact,validation,logistic_regression
+V012,Where is semantic role labeling taught?,CSE 4121,exact,validation,semantic_roles
+V013,Which subject covers pulse code modulation?,CSE 4105,exact,validation,pcm
+V014,Where can I study restoring degraded images?,CSE 4101,semantic,validation,restoration
+V015,Which course teaches dental surgery?,,negative,validation,dental
+V016,Where do we learn ancient Egyptian archaeology?,,negative,validation,archaeology
+V017,Which course teaches skateboarding tricks?,,negative,validation,skateboarding
+V018,Where are violin bowing techniques taught?,,negative,validation,violin
+V019,What time does my bus leave today?,,out_of_domain,validation,bus
+V020,Which actor won an award last night?,,out_of_domain,validation,actor
+V021,How much does a hotel room in Paris cost?,,out_of_domain,validation,hotel
+V022,Which course covers equestrian dressage?,,negative,validation,dressage
+V023,What is the current exchange rate for euros?,,out_of_domain,validation,exchange_rate
+V024,Where can I study coral reef conservation?,,negative,validation,coral

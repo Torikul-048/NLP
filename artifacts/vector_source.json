@@ -1,0 +1,9 @@
+{
+  "path": ".cache/word2vec/GoogleNews-vectors-negative300-SLIM.bin.gz",
+  "source": "https://media.githubusercontent.com/media/eyaler/word2vec-slim/master/GoogleNews-vectors-negative300-SLIM.bin.gz",
+  "vocabulary_size": 299567,
+  "dimension": 300,
+  "sha256": "deb54fc8c59a37659abfe27a8c0a2bc04b2c9478ad24676a1279de58daa3a5a6",
+  "variant": "slim",
+  "note": "SLIM preserves pretrained Google News vectors for roughly 300k English words; it is not the full 3-million-entry model."
+}

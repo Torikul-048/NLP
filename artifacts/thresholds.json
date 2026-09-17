@@ -1,0 +1,614 @@
+{
+  "model_a": {
+    "threshold": 0.11388364673311512,
+    "validation_balanced_accuracy": 0.8428571428571429,
+    "corpus_hash": "c0c61cdf5468f57c05ecbbcd81247a73032e771bc855a37a7225e961e55d352a",
+    "samples": [
+      {
+        "query_id": "V001",
+        "score": 0.23589496919538563,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V002",
+        "score": 0.2038316285528157,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V003",
+        "score": 0.19028012658807125,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V004",
+        "score": 0.12021941235365985,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V005",
+        "score": 0.11917765021070773,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V006",
+        "score": 0.13353144250379548,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V007",
+        "score": 0.09870186083870444,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V008",
+        "score": 0.08439705515391333,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V009",
+        "score": 0.15202908333719245,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V010",
+        "score": 0.12122617030294455,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V011",
+        "score": 0.09665077384687001,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V012",
+        "score": 0.18257308439666367,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V013",
+        "score": 0.12311697708668182,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V014",
+        "score": 0.11809250686264182,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V015",
+        "score": 0.050911299349576146,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V016",
+        "score": 0.0,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V017",
+        "score": 0.0,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V018",
+        "score": 0.05535966746319596,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V019",
+        "score": 0.10224315178116285,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V020",
+        "score": 0.0,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V021",
+        "score": 0.12397867635581637,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V022",
+        "score": 0.0,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V023",
+        "score": 0.10085746338558883,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V024",
+        "score": 0.10967478660358841,
+        "has_answer": false,
+        "all_oov": false
+      }
+    ],
+    "manifest_sha256": "a1306ff97d84c0b133dc6ff23224f9668bc47edbc1198d3a781687dad46493ab",
+    "selection": "Maximize balanced acceptance/rejection accuracy; ties favor rejection."
+  },
+  "model_b": {
+    "threshold": 0.47397947311401367,
+    "validation_balanced_accuracy": 0.8785714285714286,
+    "corpus_hash": "c0c61cdf5468f57c05ecbbcd81247a73032e771bc855a37a7225e961e55d352a",
+    "samples": [
+      {
+        "query_id": "V001",
+        "score": 0.7025993466377258,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V002",
+        "score": 0.2910600006580353,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V003",
+        "score": 0.646562933921814,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V004",
+        "score": 0.40402817726135254,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V005",
+        "score": 0.5446621179580688,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V006",
+        "score": 0.5898945927619934,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V007",
+        "score": 0.6015068292617798,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V008",
+        "score": 0.6025630235671997,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V009",
+        "score": 0.5786882638931274,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V010",
+        "score": 0.6347302794456482,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V011",
+        "score": 0.5206283330917358,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V012",
+        "score": 0.6097024083137512,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V013",
+        "score": 0.5976515412330627,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V014",
+        "score": 0.5523795485496521,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V015",
+        "score": 0.4012003242969513,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V016",
+        "score": 0.34528791904449463,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V017",
+        "score": 0.28997886180877686,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V018",
+        "score": 0.3755946755409241,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V019",
+        "score": 0.4180562496185303,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V020",
+        "score": 0.3556630611419678,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V021",
+        "score": 0.3447132408618927,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V022",
+        "score": 0.2061990201473236,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V023",
+        "score": 0.6003192663192749,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V024",
+        "score": 0.4273306131362915,
+        "has_answer": false,
+        "all_oov": false
+      }
+    ],
+    "manifest_sha256": "1daed1730bef86632743aa9bab4103a3b1ca4f1d0650bd8e37d4f67310c4a5b8",
+    "selection": "Maximize balanced acceptance/rejection accuracy; ties favor rejection."
+  },
+  "model_d": {
+    "threshold": 0.23932205140590668,
+    "validation_balanced_accuracy": 1.0,
+    "corpus_hash": "c0c61cdf5468f57c05ecbbcd81247a73032e771bc855a37a7225e961e55d352a",
+    "samples": [
+      {
+        "query_id": "V001",
+        "score": 0.3635237514972687,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V002",
+        "score": 0.2992002069950104,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V003",
+        "score": 0.3317728340625763,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V004",
+        "score": 0.38414105772972107,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V005",
+        "score": 0.3515528440475464,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V006",
+        "score": 0.42902064323425293,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V007",
+        "score": 0.3866844177246094,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V008",
+        "score": 0.43734508752822876,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V009",
+        "score": 0.4150775671005249,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V010",
+        "score": 0.5345335602760315,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V011",
+        "score": 0.2636672556400299,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V012",
+        "score": 0.4367530047893524,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V013",
+        "score": 0.3123452961444855,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V014",
+        "score": 0.4902840852737427,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V015",
+        "score": 0.1228693425655365,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V016",
+        "score": 0.21012139320373535,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V017",
+        "score": 0.18384981155395508,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V018",
+        "score": 0.17344269156455994,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V019",
+        "score": 0.15375736355781555,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V020",
+        "score": 0.11573396623134613,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V021",
+        "score": 0.10492189973592758,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V022",
+        "score": 0.15520593523979187,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V023",
+        "score": 0.21497684717178345,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V024",
+        "score": 0.16738472878932953,
+        "has_answer": false,
+        "all_oov": false
+      }
+    ],
+    "manifest_sha256": "057a8f4e2c26cf517c0472a1491bdf9450586e0520dc1f4da486fb2b7aa3d03f",
+    "selection": "Maximize balanced acceptance/rejection accuracy; ties favor rejection."
+  },
+  "model_c": {
+    "threshold": 0.7853701114654541,
+    "validation_balanced_accuracy": 0.9,
+    "corpus_hash": "c0c61cdf5468f57c05ecbbcd81247a73032e771bc855a37a7225e961e55d352a",
+    "samples": [
+      {
+        "query_id": "V001",
+        "score": 0.864236056804657,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V002",
+        "score": 0.8233637809753418,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V003",
+        "score": 0.9534230828285217,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V004",
+        "score": 0.8458768129348755,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V005",
+        "score": 0.8598873615264893,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V006",
+        "score": 0.8658185601234436,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V007",
+        "score": 0.9534567594528198,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V008",
+        "score": 0.9256154894828796,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V009",
+        "score": 0.881036102771759,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V010",
+        "score": 0.9699925184249878,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V011",
+        "score": 0.8958029747009277,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V012",
+        "score": 0.8905871510505676,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V013",
+        "score": 0.9612172245979309,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V014",
+        "score": 0.8999649882316589,
+        "has_answer": true,
+        "all_oov": false
+      },
+      {
+        "query_id": "V015",
+        "score": 0.7473764419555664,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V016",
+        "score": 0.4708092510700226,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V017",
+        "score": 0.6927211284637451,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V018",
+        "score": 0.685742199420929,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V019",
+        "score": 0.20725442469120026,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V020",
+        "score": 0.14388388395309448,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V021",
+        "score": 0.5468631982803345,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V022",
+        "score": 0.5425469279289246,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V023",
+        "score": 0.8716288208961487,
+        "has_answer": false,
+        "all_oov": false
+      },
+      {
+        "query_id": "V024",
+        "score": 0.852272093296051,
+        "has_answer": false,
+        "all_oov": false
+      }
+    ],
+    "manifest_sha256": "876fd8734480a0971f134a71a8bfa8c5400aa9cf7b040380f4b5e9cf36973e48",
+    "selection": "Maximize balanced acceptance/rejection accuracy; ties favor rejection."
+  }
+}

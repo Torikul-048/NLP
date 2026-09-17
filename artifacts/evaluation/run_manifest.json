@@ -1,0 +1,19 @@
+{
+  "dataset": {
+    "train": 68,
+    "validation": 24,
+    "test": 48,
+    "note": "Exact duplicates and declared groups checked; semantic paraphrase independence requires human review."
+  },
+  "evaluation_sha256": "48c17eb1ea6fd1539a2feb45f8abef821a38a96a9878d3624c52fb372bd98d2f",
+  "requested_models": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "unavailable_models": {},
+  "retrieval_only": "Ranking before rejection and metadata routing; full-ranking MRR; unique course codes.",
+  "end_to_end": "Final returned answers after rejection and deterministic metadata routing; MRR over returned results.",
+  "limitations": "Small manually authored development benchmark. Scores are descriptive, not evidence of general superiority. Model selection must not use the test set."
+}

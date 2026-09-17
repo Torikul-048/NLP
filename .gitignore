@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+.cache/
+artifacts/model_*/*
+!artifacts/model_*/.gitkeep
+*.log

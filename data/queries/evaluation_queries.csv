@@ -1,0 +1,49 @@
+query_id,query_text,gold_course_code,query_category,has_answer,group_id
+E001,Which course teaches RSA and ElGamal?,CSE 4115,exact,true,asymmetric_crypto
+E002,Where do we learn public key encryption?,CSE 4115|CSE 4215|CSE 4213,semantic,true,public_key
+E003,cryptography course,CSE 4115,partial,true,crypto_partial
+E004,which course teaches cryptograpy,CSE 4115,typo,true,crypto_typo
+E005,CSE4121,CSE 4121,metadata,true,nlp_code
+E006,How many credits does NLP have?,CSE 4121,metadata,true,nlp_credit
+E007,"CSE 4121 has 4 credits right?",CSE 4121,metadata,true,nlp_false_premise
+E008,Does CSE 4115 have a lab?,CSE 4116,metadata,true,security_lab
+E009,security,CSE 4115|CSE 4213|CSE 4215|CSE 4229,ambiguous,true,security_ambiguous
+E010,course about protecting computer systems,CSE 4115,semantic,true,system_protection
+E011,Which course teaches marine biology?,,negative,false,marine_biology
+E012,Who is the president of France?,,out_of_domain,false,president
+E013,asdf qwer zx,,out_of_domain,false,gibberish
+E014,Which course covers B plus trees?,CSE 3109,exact,true,bplus
+E015,Where is part of speech tagging taught?,CSE 4121,exact,true,pos_tagging
+E016,Where do we learn to identify named people and places in text?,CSE 4121,semantic,true,named_entities
+E017,Which course teaches support vector machines?,CSE 4111,exact,true,svm
+E018,Where are neural classifiers with separating margins studied?,CSE 4111,semantic,true,margins
+E019,Which course teaches breadth first and depth first graph traversal?,CSE 2105|CSE 3209,exact,true,graph_traversal
+E020,Where do we learn how to find the shortest route in a graph?,CSE 2105|CSE 2201,semantic,true,shortest_path
+E021,Which course studies Fourier transforms for discrete signals?,CSE 4107,exact,true,dft
+E022,Which subject teaches ECG and EEG measurements?,CSE 4241,exact,true,biosignals
+E023,Where can I study analyzing electrical signals from the human body?,CSE 4241,semantic,true,bioelectric
+E024,Which course covers graph coloring?,CSE 4247,exact,true,graph_coloring
+E025,Where do we study assigning colors to neighboring graph vertices?,CSE 4247,semantic,true,vertex_colors
+E026,Where are outliers detected in datasets?,CSE 4239,exact,true,outliers
+E027,Which course teaches detecting unusual records in large datasets?,CSE 4239,semantic,true,anomaly
+E028,Which course explains BLAST?,CSE 4249,exact,true,blast
+E029,Which course covers Amdahl's law?,CSE 4243|CSE 4221,exact,true,amdahl
+E030,Which subject teaches digital forensic evidence?,CSE 4229,exact,true,forensic_evidence
+E031,Which course teaches investigating evidence on computers?,CSE 4229,semantic,true,investigation
+E032,operating systms,CSE 3101,typo,true,os_typo
+E033,databse systems,CSE 3109|CSE 4219,typo,true,database_typo
+E034,neural networks,CSE 4111|CSE 4131,ambiguous,true,neural
+E035,image processing,CSE 4101|CSE 4217,ambiguous,true,image
+E036,robot motion,CSE 4233,partial,true,robot
+E037,What are the contact hours of CSE 4122?,CSE 4122,metadata,true,nlp_lab_hours
+E038,What year and term is CSE 4111 in?,CSE 4111,metadata,true,ml_term
+E039,Which courses are in fourth year first term?,CSE 4000|CSE 4101|CSE 4102|CSE 4105|CSE 4106|CSE 4115|CSE 4116|CSE 4103|CSE 4104|CSE 4107|CSE 4108|CSE 4111|CSE 4112|CSE 4117|CSE 4118|CSE 4121|CSE 4122|CSE 4129|CSE 4130|CSE 4131|CSE 4132,metadata,true,year_listing
+E040,Who teaches CSE 4121?,,negative,false,teacher
+E041,What are the prerequisites for CSE 3109?,,negative,false,prerequisite
+E042,CSE9999,,negative,false,unknown_code
+E043,Which course teaches French pastry baking?,,negative,false,baking
+E044,Where can I learn opera singing?,,negative,false,opera
+E045,Which subject teaches ocean navigation?,,negative,false,ocean
+E046,Give me today's lottery results,,out_of_domain,false,lottery
+E047,What is my horoscope this week?,,out_of_domain,false,horoscope
+E048,Which football club won yesterday?,,out_of_domain,false,football_test
