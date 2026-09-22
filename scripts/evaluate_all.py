@@ -42,6 +42,12 @@ def main():
         "retrieval_only": "Ranking before rejection and metadata routing; full-ranking MRR; unique course codes.",
         "end_to_end": "Final returned answers after rejection and deterministic metadata routing; MRR over returned results.",
         "limitations": "Small manually authored development benchmark. Scores are descriptive, not evidence of general superiority. Model selection must not use the test set."})
+    try:
+        from src.plotting import generate_all_plots
+        generate_all_plots()
+        print("Generated all evaluation plots in plotting/", flush=True)
+    except Exception as exc:
+        print(f"Plot generation notice: {exc}", flush=True)
     if unavailable:
         raise SystemExit(1)
 

@@ -111,6 +111,24 @@ Outputs in `artifacts/evaluation/`:
 
 Two modes are reported. **retrieval_only** measures the selected model's ranking before rejection or metadata routing, with full-ranking MRR. **end_to_end** measures final answers after deterministic routing and rejection, with MRR over returned results. This prevents exact-code lookups from being presented as learned semantic ability. Positive-only ranking metrics exclude unanswerable queries; rejection metrics use the appropriate positive/negative denominators. Recall@3 measures the fraction of all gold courses returned in the first three positions. A year/term query with 21 gold courses therefore has a maximum Recall@3 of 3/21 even when the full UI listing is correct. Missing metrics remain empty; unavailable models never receive invented scores.
 
+### Automated Visualizations and Performance Plots
+
+Running `start_app.bat` or `python -m scripts.generate_plots` automatically generates 300 DPI evaluation figures and organizes them into model-wise folders inside `plotting/`:
+
+- `plotting/model_a/`, `model_b/`, `model_c/`, `model_d/`:
+  - `confusion_matrix_retrieval_only.png` & `confusion_matrix_end_to_end.png`: 2×2 confusion matrices (True Positive, False Positive, True Negative, False Negative) evaluating query acceptance vs out-of-domain rejection.
+  - `classification_metrics.png`: Acceptance classification Accuracy, Precision, Recall, F1-Score, and Specificity.
+  - `retrieval_metrics.png`: Hit@1, Hit@3, MRR, and Recall@3 ranking comparisons.
+  - `category_performance.png`: Breakdown across query categories (exact, semantic, metadata, typo, partial, ambiguous).
+  - `score_distribution.png`: Top similarity/relevance scores for answerable vs unanswerable queries with the calibrated decision threshold marked.
+  - `training_loss_curve.png`: Model C BiLSTM training & validation loss convergence (when trained).
+  - `metrics_summary.json`: Detailed machine-readable JSON metrics summary.
+- `plotting/comparison/`:
+  - `model_comparison_retrieval_only.png` & `model_comparison_end_to_end.png`: 4-model side-by-side performance comparisons.
+  - `error_rates_far_frr.png`: False Acceptance Rate (FAR) vs False Rejection Rate (FRR) trade-offs.
+  - `overall_radar_chart.png`: Multi-dimensional radar profile summarizing each model's strengths.
+- All generated plots are also viewable and refreshable directly inside the Streamlit web application under **"📊 Evaluation Results & Performance Plots"**.
+
 ### Limitations
 
 - A small supervised dataset can overfit. Model C is an experiment; it is not guaranteed to beat TF-IDF or pretrained SBERT.
@@ -126,6 +144,7 @@ Two modes are reported. **retrieval_only** measures the selected model's ranking
 python -m scripts.build_all_indexes --models a
 python -m scripts.calibrate_thresholds --models a
 python -m scripts.evaluate_all --models a
+python -m scripts.generate_plots
 python -c "from src.registry import create_model; print(create_model('model_a').retrieve('Which course covers RSA and ElGamal?'))"
 ```
 
