@@ -137,14 +137,117 @@ else:
     st.info("Enter an academic query and select Search. After searching, switch the model to compare the same query immediately.")
 
 st.divider()
-with st.expander("Evaluation comparison"):
-    path = ROOT / "artifacts/evaluation/comparison.csv"
-    if path.exists():
-        df = comparison_data(file_version(path))
-        st.caption("Held-out development benchmark. Ranking metrics exclude unanswerable questions. The two modes separate model ranking from the complete application.")
-        st.dataframe(df, hide_index=True, width="stretch")
-    else:
-        st.caption("Run python -m scripts.evaluate_all after training and threshold calibration.")
+with st.expander("📊 Evaluation Results & Performance Plots", expanded=False):
+    tab_table, tab_plots = st.tabs(["📋 Metrics Table", "📈 Visual Plots & Confusion Matrices"])
+    with tab_table:
+        path = ROOT / "artifacts/evaluation/comparison.csv"
+        if path.exists():
+            df = comparison_data(file_version(path))
+            st.caption("Held-out development benchmark. Ranking metrics exclude unanswerable questions. The two modes separate model ranking from the complete application.")
+            st.dataframe(df, hide_index=True, width="stretch")
+        else:
+            st.caption("Run python -m scripts.evaluate_all after training and threshold calibration.")
+
+    with tab_plots:
+        plotting_dir = ROOT / "plotting"
+        # Auto-generate if missing
+        if not plotting_dir.exists() or not any(plotting_dir.glob("*/*.png")):
+            try:
+                from src.plotting import generate_all_plots
+                generate_all_plots()
+            except Exception:
+                pass
+
+        header_col, btn_col = st.columns([3, 1])
+        with header_col:
+            selected_plot_view = st.selectbox(
+                "Select Model or Overview",
+                [
+                    "Cross-Model Comparison",
+                    "Model A — TF-IDF (Sparse)",
+                    "Model B — Word2Vec (Dense Centroid)",
+                    "Model C — BiLSTM (Neural Matcher)",
+                    "Model D — Sentence-BERT (MiniLM)",
+                ],
+                key="ui_plot_view_selection",
+            )
+        with btn_col:
+            st.write("")
+            st.write("")
+            if st.button("🔄 Regenerate Plots", key="ui_regen_plots_btn"):
+                try:
+                    from src.plotting import generate_all_plots
+                    res = generate_all_plots()
+                    st.success(f"Generated {res['generated_files_count']} figures into {res['output_directory']}!")
+                except Exception as exc:
+                    st.error(f"Plot regeneration error: {exc}")
+
+        model_key_map = {
+            "Model A — TF-IDF (Sparse)": "model_a",
+            "Model B — Word2Vec (Dense Centroid)": "model_b",
+            "Model C — BiLSTM (Neural Matcher)": "model_c",
+            "Model D — Sentence-BERT (MiniLM)": "model_d",
+        }
+
+        if selected_plot_view == "Cross-Model Comparison":
+            comp_dir = plotting_dir / "comparison"
+            st.subheader("Cross-Model Comparative Benchmark")
+            c1, c2 = st.columns(2)
+            p_ro = comp_dir / "model_comparison_retrieval_only.png"
+            p_e2e = comp_dir / "model_comparison_end_to_end.png"
+            if p_ro.exists():
+                c1.image(str(p_ro), caption="Retrieval Only Mode (Raw Vector Ranking)", use_container_width=True)
+            if p_e2e.exists():
+                c2.image(str(p_e2e), caption="End-to-End Mode (Final Application Answers)", use_container_width=True)
+
+            c3, c4 = st.columns(2)
+            p_err = comp_dir / "error_rates_far_frr.png"
+            p_rad = comp_dir / "overall_radar_chart.png"
+            if p_err.exists():
+                c3.image(str(p_err), caption="False Acceptance Rate (FAR) vs False Rejection Rate (FRR)", use_container_width=True)
+            if p_rad.exists():
+                c4.image(str(p_rad), caption="Multi-Metric Capability Radar Profile", use_container_width=True)
+
+        elif selected_plot_view in model_key_map:
+            m_id = model_key_map[selected_plot_view]
+            m_dir = plotting_dir / m_id
+            st.subheader(f"{selected_plot_view} Performance Visualizations")
+
+            # Row 1: Confusion Matrices
+            st.markdown("#### 1. Confusion Matrices (Query Acceptance & Rejection)")
+            c1, c2 = st.columns(2)
+            cm_ro = m_dir / "confusion_matrix_retrieval_only.png"
+            cm_e2e = m_dir / "confusion_matrix_end_to_end.png"
+            if cm_ro.exists():
+                c1.image(str(cm_ro), caption="Confusion Matrix — Retrieval Only Mode", use_container_width=True)
+            if cm_e2e.exists():
+                c2.image(str(cm_e2e), caption="Confusion Matrix — End-to-End Mode", use_container_width=True)
+
+            # Row 2: Metrics
+            st.markdown("#### 2. Classification & Retrieval Ranking Metrics")
+            c3, c4 = st.columns(2)
+            m_clf = m_dir / "classification_metrics.png"
+            m_ret = m_dir / "retrieval_metrics.png"
+            if m_clf.exists():
+                c3.image(str(m_clf), caption="Acceptance Classification Metrics (Acc, Prec, Rec, F1)", use_container_width=True)
+            if m_ret.exists():
+                c4.image(str(m_ret), caption="Retrieval Ranking Performance (Hit@1, Hit@3, MRR, Recall@3)", use_container_width=True)
+
+            # Row 3: Category & Score Distribution
+            st.markdown("#### 3. Category Performance & Score Distributions")
+            c5, c6 = st.columns(2)
+            m_cat = m_dir / "category_performance.png"
+            m_dist = m_dir / "score_distribution.png"
+            if m_cat.exists():
+                c5.image(str(m_cat), caption="Category-Specific Performance (End-to-End)", use_container_width=True)
+            if m_dist.exists():
+                c6.image(str(m_dist), caption="Top Score Distribution & Calibrated Decision Boundary", use_container_width=True)
+
+            # Model C training curve
+            loss_curve = m_dir / "training_loss_curve.png"
+            if loss_curve.exists():
+                st.markdown("#### 4. Neural Network Training Dynamics")
+                st.image(str(loss_curve), caption="BiLSTM Training & Validation Loss Convergence", use_container_width=True)
 
 with st.expander("Curriculum source and model notes"):
     st.write("KUET CSE undergraduate syllabus, effective from academic session 2021–2022. Answers quote or format the supplied PDF; missing information is reported explicitly.")
